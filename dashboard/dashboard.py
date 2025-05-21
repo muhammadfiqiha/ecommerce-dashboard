@@ -45,8 +45,6 @@ def create_rfm_df(df):
     
     return rfm_df
 
-import pathlib
-
 csv_path = pathlib.Path("dashboard") / "main_data.csv"
 all_df = pd.read_csv(csv_path)
 
