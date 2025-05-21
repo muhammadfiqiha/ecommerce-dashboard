@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import os
+import pathlib
 from babel.numbers import format_currency
 sns.set(style='dark')
 
@@ -45,7 +45,9 @@ def create_rfm_df(df):
     
     return rfm_df
 
-csv_path = os.path.join(os.path.dirname(__file__), "main_data.csv")
+import pathlib
+
+csv_path = pathlib.Path("dashboard") / "main_data.csv"
 all_df = pd.read_csv(csv_path)
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
