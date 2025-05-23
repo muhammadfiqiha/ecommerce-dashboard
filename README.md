@@ -26,7 +26,7 @@ python -m venv streamlit-env
 ```
 Windows
 ```
-streamlit-env\Scripts\activate
+streamlit-env\Scripts\activate.bat
 ```
 Linux/Mac
 ```
